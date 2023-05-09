@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+    .list {
+      box-shadow: 1px 1px 5px white;
+      position: absolute;
+      left: 0%;
+      width: 0%;
+      top: 0;
+      transition: all 0.3s ease-in;
+      overflow: hidden;
+      background-color: rgba(36, 36, 36, 1);
+      height: 140%;
+      border-radius: 10px;
+      z-index: 1;
+      opacity: 1;
+    }
+
+    .list.active{
+      width: 700px;
+      z-index: 1;
+    }
+
+    .list ul{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+  }
