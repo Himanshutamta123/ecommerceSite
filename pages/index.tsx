@@ -1,12 +1,12 @@
-import Footer from './Footer'
-import HandPick from './HandPick'
-import ImagePart from './ImagePart'
-import LinkText from './LinkText'
-import PicturePart from './PicturePart'
-import ProductCard from './ProductCard'
-import Seller from './Seller'
-import Subscribe from './Subscribe'
-import TopHeader from './TopHeader'
+import Footer from '../components/Footer'
+import HandPick from '../components/HandPick'
+import ImagePart from '../components/ImagePart'
+import LinkText from '../components/LinkText'
+import PicturePart from '../components/PicturePart'
+import ProductCard from '../components/ProductCard'
+import Seller from '../components/Seller'
+import Subscribe from '../components/Subscribe'
+import TopHeader from '../components/TopHeader'
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <PicturePart />
       <HandPick />
       <Subscribe />
-    <Footer />
+      <Footer />
     </div>
   )
 }
