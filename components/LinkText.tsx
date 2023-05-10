@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "next/image";
 
 
 const pickData = [
@@ -10,7 +9,7 @@ const pickData = [
       title: "Electic Decor",
     },
     {
-      title: "Polka Boho Decor",
+      title: "PolkaBoho Decor",
     },
     {
       title: "Minimalist Style",
@@ -24,11 +23,11 @@ const pickData = [
   ];
 const LinkText = () => {
   return (
-    <div className='w-[70%] m-auto flex space-x-4 mb-10 max-lg:w-[98%] max-2xl:w-[80%] max-xl:w-[90%]'>
+    <div className='w-[94%] m-auto grid grid-cols-6 gap-4 max-md:grid-cols-3 mb-10 max-w-7xl max-md:gap-8'>
      {pickData.map((item): any => {
           return (
-            <div className=" w-[16%]">
-              <h1 className="font-semibold mt-8 pb-9 px-[63px] shadow-gray-800 border-b-2 border-[#3E3E3E] hover:border-b-2 hover:border-[#EB6D20] hover:text-[#EB6D20] hover:pb-7 max-lg:px-[35px] max-2xl:px-[50px]">
+            <div className="">
+              <h1 className="font-semibold mt-8 h-20 pb-9 px-[54px] text-center shadow-gray-800 border-b-2 border-[#3E3E3E] hover:border-b-2 hover:border-[#EB6D20] hover:text-[#EB6D20] hover:h-16 max-lg:px-[35px] max-md:h-14 max-md:hover:h-12">
                 {item.title}
               </h1>
             </div>

@@ -1,8 +1,8 @@
 // import React from 'react'
 import Image from 'next/image';
-import product1 from './images/product1.png'
-import product2 from './images/product2.png'
-import product3 from './images/product3.png'
+import product1 from '../images/product1.png'
+import product2 from '../images/product2.png'
+import product3 from '../images/product3.png'
 
 const productData = [
     {
@@ -23,16 +23,16 @@ const productData = [
 ]
 const ProductCard = () => {
   return (
-    <div className="w-[70%] m-auto my-4 flex space-x-8 max-lg:w-[98%] max-2xl:w-[80%] max-xl:w-[90%]">
+    <div className="w-[94%] m-auto my-4 flex space-x-8 max-w-7xl max-sm:flex-col max-sm:gap-5 max-sm:space-x-0">
         {productData.map((item) : any => {
             console.log(item)
             return(
-      <div className='flex w-[31.5%] bg-[#eeebeb] p-5 rounded-md hover:bg-[#D6D6D6] max-lg:flex-col max-lg:items-center'>
+      <div className='flex bg-[#eeebeb] p-5 rounded-md hover:bg-[#D6D6D6] max-lg:flex-col max-lg:items-center '>
         <div className='text-left space-y-2 mt-5 max-lg:order-2 max-lg:text-center'>
-        <h3 className=' w-[60%] font-medium leading-5 text-lg max-lg:w-[100%]'>{item.title}</h3>
-        <p className='w-[90%] leading-4 text-sm font-normal max-lg:w-[100%]'>{item.para}</p>
+        <h3 className=' w-[60%] font-medium leading-5 text-lg max-xl:w-[100%]'>{item.title}</h3>
+        <p className='w-[90%] leading-4 text-sm font-normal max-xl:w-[100%] max-sm:leading-5'>{item.para}</p>
         </div>
-        <Image src={item.img} alt='product1' height={130} width={130} className='max-lg:order-1 ' />
+        <Image src={item.img} alt='product1' height={130} width={130} className='max-lg:order-1 max-xl:w-32 max-xl:h-32 max-2xl:w-36  max-2xl:h-36' />
       </div>
             )
         }) }

@@ -1,11 +1,11 @@
 // import React from 'react'
 import Image from "next/image";
-import rectangle47 from "./images/Rectangle47.png";
-import rectangle49 from "./images/Rectangle49.png";
-import rectangle51 from "./images/Rectangle51.png";
-import rectangle53 from "./images/Rectangle53.png";
-import rectangle55 from "./images/Rectangle55.png";
-import rectangle57 from "./images/Rectangle57.png";
+import rectangle47 from "../images/Rectangle47.png";
+import rectangle49 from "../images/Rectangle49.png";
+import rectangle51 from "../images/Rectangle51.png";
+import rectangle53 from "../images/Rectangle53.png";
+import rectangle55 from "../images/Rectangle55.png";
+import rectangle57 from "../images/Rectangle57.png";
 import { GrFormNext } from 'react-icons/gr';
 import { GrFormPrevious } from 'react-icons/gr';
 
@@ -51,29 +51,27 @@ const pickData = [
 
 const HandPick = () => {
   return (
-    <div className="w-[70%] m-auto relative mb-4 max-lg:w-[98%] max-2xl:w-[80%] max-xl:w-[90%]">
-       <GrFormPrevious className='bg-gray-300 h-12 w-12 rounded-full font-thin p-1 -ml-24 mt-44 absolute max-lg:hidden'/>
+    <div className="w-[94%] m-auto relative mb-4 max-w-7xl">
+       <GrFormPrevious className='bg-gray-300 h-12 w-12 rounded-full font-thin p-1 -left-24 top-44 absolute  max-2xl:-left-16 max-2xl:hidden'/>
       <h2 className="text-left font-semibold text-xl mt-5">
         Discover unique hand-picked items
       </h2>
-      <div className="space-x-4 flex ">
+      <div className=" grid grid-cols-6 gap-3 max-md:grid-cols-4 max-sm:grid-cols-2">
         {pickData.map((item): any => {
           return (
-            // <div className=" w-[16%]">
-              <div className=" mt-10 bg-white p-2 rounded-lg drop-shadow-lg w-[16%]">
-                <Image src={item.img} alt="" />
+              <div className=" mt-10 bg-white p-2 rounded-lg drop-shadow-lg max-sm:items-center ">
+                <Image src={item.img} alt="fff" className=" " />
                 <p className="text-sm font-semibold text-left py-3 text-[#3E3E3E] h-20">
                   {item.para}
                 </p>
                 <h3 className="font-bold text-left pb-1 text-[#3E3E3E]">
                   {item.mrp}
                 </h3>
-              {/* </div> */}
             </div>
           );
         })}
       </div>
-      <GrFormNext className='bg-gray-300 h-12 w-12 rounded-full font-thin p-1 absolute top-44 -right-24 max-lg:hidden'/>
+      <GrFormNext className='bg-gray-300 h-12 w-12 rounded-full font-thin p-1 absolute top-44 -right-24 max-2xl:hidden max-2xl:-right-16'/>
     </div>
   );
 };
